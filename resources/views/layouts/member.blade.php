@@ -30,40 +30,45 @@
 
     <!-- Template Stylesheet -->
     <link href={{ asset('assets/frontend/css/style.css') }} rel="stylesheet">
+    <link href={{ asset('assets/frontend/css/fancybox.css') }} rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" /> --}}
+
 
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
+
         {{-- NAVBAR --}}
         @include('layouts.partials.member.navbar')
         {{-- END NAVBAR --}}
 
         {{-- HEADER --}}
         {{-- @include('layouts.partials.member.header') --}}
-
         @yield('content')
         {{-- END HEADER --}}
 
         {{-- FOOTER --}}
         @include('layouts.partials.member.footer')
-      </div>
-        {{-- END FOOTER --}}
 
+    </div>
+    {{-- END FOOTER --}}
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/n pm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> --}}
     <script src={{ asset('assets/frontend/lib/wow/wow.min.js') }}></script>
     <script src={{ asset('assets/frontend/lib/easing/easing.min.js') }}></script>
     <script src={{ asset('assets/frontend/lib/waypoints/waypoints.min.js') }}></script>
     <script src={{ asset('assets/frontend/lib/owlcarousel/owl.carousel.min.js') }}></script>
 
+
     <!-- Template Javascript -->
     <script src={{ asset('assets/frontend/js/main.js') }}></script>
+    <script src={{ asset('assets/frontend/js/fancybox.umd.js') }}></script>
 
 </body>
 

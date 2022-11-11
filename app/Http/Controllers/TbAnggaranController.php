@@ -33,14 +33,14 @@ class TbAnggaranController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
+     *@param  \Illuminate\Http\Request  $request
+
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         $rules = [
-            'id_wilayah' => 'required', 
+            'id_wilayah' => 'required',
             'tahun' => 'required',
             'anggaran' => 'required',
         ];
@@ -96,7 +96,7 @@ class TbAnggaranController extends Controller
     public function update(Request $request, $id)
     {
         $rules = [
-            'id_wilayah' => 'required', 
+            'id_wilayah' => 'required',
             'tahun' => 'required',
             'anggaran' => 'required',
         ];
@@ -119,7 +119,7 @@ class TbAnggaranController extends Controller
         $anggaran->save();
         session()->put('success', 'Data Berhasil Di Edit');
         return redirect()->route('anggaran.index');
-    
+
     }
 
     /**

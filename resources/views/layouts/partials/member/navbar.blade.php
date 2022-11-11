@@ -7,9 +7,9 @@ $menu = Tb_menu::orderBy('urutan', 'asc')->get();
 ?>
 
 <!-- Navbar Start -->
-<div class="container-fluid nav-bar bg-transparent">
+<div class="nav-bar container-fluid bg-transparent ">
     <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+        <a href="/" class="navbar-brand d-flex align-items-center text-center">
             {{-- <div class="icon p-2 me-2">
                 <img class="img-fluid" src="assets/frontend/img/icon-deal.png" alt="Icon"
                     style="width: 30px; height: 30px;">
@@ -21,7 +21,7 @@ $menu = Tb_menu::orderBy('urutan', 'asc')->get();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/" class="nav-item nav-link ">Home</a>
                 @foreach ($menu as $item)
                     @if ($item->id_konten === 0)
                         <div class="nav-item dropdown">

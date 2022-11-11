@@ -19,13 +19,14 @@
         </div>
         <div class="col-md-6 animated fadeIn">
             <div class="owl-carousel header-carousel">
-                @foreach ($slide as $data)
+                {{-- @foreach ($slide as $data) --}}
                 <div class="owl-carousel-item">
-                    <img class="img-fluid" src="{{$data->gambar()}}" alt="Blog">
+                    <img class="img-fluid" src="{{ asset('assets/frontend/img/carousel-1.jpg')}} " alt="Blog">
                 </div>
-                @endforeach
+                {{-- @endforeach --}}
             </div>
         </div>
     </div>
 </div>
+{{-- {{$data->gambar()}} --}}
 {{-- === HEADER START === --}}

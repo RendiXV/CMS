@@ -8,11 +8,11 @@
                 <p>Foto Galeri {{ $kategoriGaleri->nama }}</p>
             </div>
 
-            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4 portfolio-container " data-aos="fade-up" data-aos-delay="200">
                 @foreach ($galeri as $item)
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s" >
                         <a class="cat-item d-block bg-light text-center rounded p-2" href="{{ $item->gambar() }}"
-                            data-caption="{{ $item->kategori_galeri->nama }}" data-fancybox="gallery">
+                            data-caption="{{ $item->kategori_galeri->nama }}" data-fancybox="gallery" >
                             <div class="rounded p-2">
                                 <div class="">
                                     <img src="{{ $item->gambar() }}" class="img-fluid" alt=""
@@ -20,6 +20,7 @@
                                 </div>
                             </div>
                         </a>
+
                         <div class="portfolio-info">
                             <h4>{{ $item->judul }}</h4>
                             <div class="portfolio-links">
