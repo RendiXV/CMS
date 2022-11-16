@@ -33,19 +33,18 @@
     <div class="page-inner mt--5">
         <div class="row row-card">
             <div class="col-sm-6 col-md-3">
-                <a href="halaman" style="text-decoration: none">
+                <a href="urutan" style="text-decoration: none">
                     <div class="card card-stats card-round">
                     <div class="card-body ">
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="fa-solid fa-layer-group text-success"></i>
+                                    <i class="fa-solid fa-layer-group text-dark"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Halaman</p>
-                                    <h4 class="card-title">{{ $dataHalaman }}</h4>
+                                    <p class="card-category" >Urutan Halaman</p>
                                 </div>
                             </div>
                         </div>
@@ -54,101 +53,71 @@
                 </a>
                 
             </div>
-            <div class="col-sm-6 col-md-3">
-                <a href="artikel" style="text-decoration: none">
 
+            <div class="col-sm-6 col-md-3">
+                <a href="slide" style="text-decoration: none">
                     <div class="card card-stats card-round">
                     <div class="card-body ">
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="fa-solid fa-newspaper text-warning"></i>
+                                    <i class="fa-solid fa-clone text-dark"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Artikel</p>
-                                    <h4 class="card-title">{{ $dataArtikel }}</h4>
+                                    <p class="card-category" >Slide</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 </a>
-                
             </div>
+
             <div class="col-sm-6 col-md-3">
-                <a href="menu" style="text-decoration: none">
+                <a href="galeri" style="text-decoration: none">
                     <div class="card card-stats card-round">
                     <div class="card-body ">
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="fa-solid fa-bars-staggered"></i>
+                                    <i class="fa-regular fa-images text-dark"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Menu</p>
-                                    <h4 class="card-title">{{ $menu }}</h4>
+                                    <p class="card-category" >Galeri</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 </a>
-                
             </div>
 
             <div class="col-sm-6 col-md-3">
-                <a href="submenu" style="text-decoration: none">
+                <a href="kontak" style="text-decoration: none">
                     <div class="card card-stats card-round">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="fa-solid fa-list"></i>
+                                    <i class="fa-solid fa-address-book text-dark"></i>
                                 </div>
                             </div>
                             <div class="col-7 col-stats">
                                 <div class="numbers">
-                                    <p class="card-category">Sub Menu</p>
-                                    <h4 class="card-title">{{ $subMenu }}</h4>
+                                    <p class="card-category" >Kontak</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 </a>
-                
             </div>
-            
-            {{-- <div class="col-sm-6 col-md-3">
-                <a href="menu" style="text-decoration: none">
-                    <div class="card card-stats card-round">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <div class="icon-big text-center">
-                                    <i class="fa-solid fa-bars-staggered"></i>
-                                </div>
-                            </div>
-                            <div class="col-7 col-stats">
-                                <div class="numbers">
-                                    <p class="card-category">Menu</p>
-                                    <h4 class="card-title">{{ $menu }}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-                
-            </div>
-            
-        </div> --}}
-        
+              
     </div>
+</div>
+    
 @endsection
